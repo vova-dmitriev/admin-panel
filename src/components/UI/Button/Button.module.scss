@@ -1,0 +1,52 @@
+@import '@/styles/colors';
+
+.btn {
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $white;
+
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 17.58px;
+	height: 40px;
+
+	border: 1px solid transparent;
+	font-family: inherit;
+	cursor: pointer;
+	transition: border-color 0.25s;
+
+	&focus, &:focus-visible {
+		outline: 4px auto -webkit-focus-ring-color;
+	}
+
+	&:hover {
+		border-color: $green;
+	}
+}
+
+.primary {
+	background: $green;
+	color: $white;
+}
+
+.danger {
+	background: $red;
+	color: $white;
+
+	&:hover {
+		border-color: rgb(175, 134, 134);
+	}
+}
+
+.count {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin-left: 10px;
+	background-color: $red;
+	color: $white;
+}

@@ -1,0 +1,8 @@
+{
+	"name": "Иван Иванов",
+	"image": "https://s3-alpha-sig.figma.com/img/1736/1836/0dc56502b550c78282502b8b5bdce290?Expires=1697414400&Signature=f97eZXd7HRtytMVFDWcxCMtQ2IIsGhS2YF8xsYd2G2Cj3p1KSiYDhhaKw5JSMKBQmeds2pLhhdO0ETNiBMFjHEYyGYuXlGIBWZIroofe-cNUW-hPYNF4IE7cZRrMQxbE7SLvfRq9KkL7dZjPRRpdis8PqrraQHqFJcX5ewP833dCZV06ZN20KSU4lUPE5TaBueysAW1sS5N7ts1ASSSOGOaS~1zXkUtU3IIkkVNX8R0VN9u1HuwiKYRk-YU8XodnGznkB2ld80QvGOpysq5wGDNdN11T4BrLGm~9-oRZtqvVUcsS9faAuPfdsCe3W1Bo8lQiS96cyi0RN7Glk56mXg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+	"email": "test@test.com",
+	"password": "test",
+	"permissions": ["Собственник"],
+	"isAuthorized": true
+}

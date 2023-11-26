@@ -1,0 +1,35 @@
+@import '@/styles/colors';
+
+.wrapper {
+	background: $white;
+	padding: 40px;
+	border-radius: 10px;
+	width: 360px;
+	min-height: 280px;
+
+	.title {
+		color: $black;
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 36px;
+		margin-bottom: 20px;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.btn {
+		margin-bottom: 20px;
+	}
+
+	.link {
+		color: $blue;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 17.58px;
+	}
+}

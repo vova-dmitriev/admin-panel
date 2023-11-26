@@ -1,0 +1,78 @@
+@import '@/styles/colors';
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.group {
+	display: flex;
+	line-height: 28px;
+	align-items: center;
+	position: relative;
+}
+
+.input {
+	width: 100%;
+	height: 100%;
+	
+	line-height: 28px;
+	padding: 15px 11px;
+	
+	border: 1px solid $gray;
+	border-radius: 8px;
+	outline: none;
+	background-color: $white;
+	color: #0d0c22;
+	transition: .3s ease;
+
+	&Error {
+		border: 1px solid $red;
+	}
+}
+
+.input::placeholder {
+	color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+	outline: none;
+	border-color: $green;
+	background-color: #fff;
+}
+
+.label {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15.23px;
+	margin-bottom: 8px;
+	color: $black;
+}
+
+.clear, .search {
+	position: absolute;
+	right: 15px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	svg {
+		opacity: 0.2;
+		width: 18px;
+		height: 18px;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+
+.error {
+	margin-top: 8px;
+	color: $red;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15.23px;
+}

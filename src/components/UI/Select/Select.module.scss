@@ -1,0 +1,113 @@
+@import "@/styles/colors.scss";
+
+.select {
+	position: relative;
+	width: 250px;
+
+	border-radius: 15px;
+	border: 1px solid $border;
+	height: 100%;
+	width: 100%;
+
+	color: $gray;
+
+	padding: 21px 27px 20px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	cursor: pointer;
+
+	.text {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+
+		&Item {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.arrow {
+			&Up {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&:focus, &:hover {
+		outline: none;
+		border-color: $green;
+		background-color: #fff;
+	}
+
+	.dropdown {
+		border: 1px solid #ccc;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background-color: #fff;
+		max-height: 150px;
+		overflow-y: auto;
+
+		cursor: pointer;
+
+		input[type="checkbox"] {
+			display: none;
+
+			& + .checkbox {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				width: 16px;
+				height: 16px;
+				border-radius: 5px;
+				border: 1px solid $border;
+				background-color: transparent;
+
+				.svg {
+						display: none; 
+				}
+			}
+
+			&:checked + .checkbox {
+				background-color: $blue;
+
+				svg {
+					display: block; 
+				}
+			}
+		}
+
+		&Item {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 9px;
+			width: 100%;
+			padding: 5px 10px;
+			cursor: pointer;
+
+			height: 100%;
+			margin-top: 11px;
+
+			color: $black;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+
+			&:hover {
+				background-color: $background-gray;
+			}
+		}
+	}
+}

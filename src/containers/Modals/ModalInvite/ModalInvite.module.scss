@@ -1,0 +1,23 @@
+@import "@/styles/colors.scss";
+
+.title {
+	color: $black;
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 44px;
+	text-wrap: nowrap;
+}
+
+
+.content {
+	input {
+		height: 61px;
+		border-radius: 15px;
+		padding: 21px 27px 20px 20px;
+	}
+
+	.select {
+		height: 61px;
+		margin-top: 8px;
+	}
+}
